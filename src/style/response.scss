@@ -1,0 +1,60 @@
+@media screen and (max-width: 740px){
+    .search{
+        &__field{
+            width: 100%;
+        }
+    }
+    .calendar{
+        &-header{
+            padding: 20px 0;
+            height: auto;
+            &__flex{
+                flex-direction: column-reverse;
+            }
+            &__button{
+                margin-top: 10px;
+            }
+        }
+        &-content{
+            padding-bottom: 30px;
+            &__block{
+                width: 100%;
+                height: auto !important;
+                border: 1px solid #d2d2d2;
+                border-bottom: none;
+                display: flex;
+                &::after{
+                    display: none;
+                }
+                &:last-child{
+                    border-bottom: 1px solid #d2d2d2 !important;
+                }
+                &.none{
+                    display: none;
+                }
+            }
+            &__day{
+                font-size: 18px;
+            }
+            &__info{
+                margin-left: 10px;
+            }
+        }
+    }
+    .popup{
+        &__add{
+            width: 100%;
+
+        }
+    }
+    .arrows{
+        &__date{
+            padding: 0 10px;
+        }
+    }
+    .form-add{
+        .error{
+            font-size: 8px;
+        }
+    }
+}
